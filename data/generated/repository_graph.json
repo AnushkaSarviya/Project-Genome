@@ -1,0 +1,1095 @@
+{
+  "version": "1.0.0",
+  "metadata": {
+    "repository_identity": "repo:sample_repo",
+    "root_path": "D:\\Project Genome\\sample_repo",
+    "extracted_at": "2026-09-26T08:17:28.162624+00:00",
+    "analyzer_version": "0.1.0",
+    "stats": {
+      "total_entities": 19,
+      "total_relationships": 35,
+      "primitive_relationships": 32,
+      "derived_relationships": 3,
+      "unresolved_calls_count": 7
+    }
+  },
+  "nodes": [
+    {
+      "id": "class:models/base.py:BaseModel",
+      "type": "Class",
+      "name": "BaseModel",
+      "path": "models/base.py",
+      "location": {
+        "file": "models/base.py",
+        "start_line": 1,
+        "end_line": 4,
+        "start_column": 0,
+        "end_column": 20
+      },
+      "properties": {
+        "qualified_name": "BaseModel",
+        "docstring": "Base model class.",
+        "decorators": [],
+        "bases": []
+      },
+      "is_synthetic": false,
+      "resolved": true
+    },
+    {
+      "id": "class:models/user.py:User",
+      "type": "Class",
+      "name": "User",
+      "path": "models/user.py",
+      "location": {
+        "file": "models/user.py",
+        "start_line": 4,
+        "end_line": 12,
+        "start_column": 0,
+        "end_column": 35
+      },
+      "properties": {
+        "qualified_name": "User",
+        "docstring": "User data model.",
+        "decorators": [],
+        "bases": [
+          "BaseModel"
+        ]
+      },
+      "is_synthetic": false,
+      "resolved": true
+    },
+    {
+      "id": "class:services/user_service.py:UserService",
+      "type": "Class",
+      "name": "UserService",
+      "path": "services/user_service.py",
+      "location": {
+        "file": "services/user_service.py",
+        "start_line": 4,
+        "end_line": 19,
+        "start_column": 0,
+        "end_column": 19
+      },
+      "properties": {
+        "qualified_name": "UserService",
+        "docstring": "Service handling user management.",
+        "decorators": [],
+        "bases": []
+      },
+      "is_synthetic": false,
+      "resolved": true
+    },
+    {
+      "id": "dir:models",
+      "type": "Directory",
+      "name": "models",
+      "path": "models",
+      "location": null,
+      "properties": {},
+      "is_synthetic": false,
+      "resolved": true
+    },
+    {
+      "id": "dir:services",
+      "type": "Directory",
+      "name": "services",
+      "path": "services",
+      "location": null,
+      "properties": {},
+      "is_synthetic": false,
+      "resolved": true
+    },
+    {
+      "id": "file:main.py",
+      "type": "File",
+      "name": "main.py",
+      "path": "main.py",
+      "location": {
+        "file": "main.py",
+        "start_line": 1,
+        "end_line": 12,
+        "start_column": 0,
+        "end_column": 0
+      },
+      "properties": {
+        "module_name": "main",
+        "extension": ".py",
+        "size_bytes": 224,
+        "line_count": 12
+      },
+      "is_synthetic": false,
+      "resolved": true
+    },
+    {
+      "id": "file:models/__init__.py",
+      "type": "File",
+      "name": "__init__.py",
+      "path": "models/__init__.py",
+      "location": {
+        "file": "models/__init__.py",
+        "start_line": 1,
+        "end_line": 1,
+        "start_column": 0,
+        "end_column": 0
+      },
+      "properties": {
+        "module_name": "models",
+        "extension": ".py",
+        "size_bytes": 22,
+        "line_count": 1
+      },
+      "is_synthetic": false,
+      "resolved": true
+    },
+    {
+      "id": "file:models/base.py",
+      "type": "File",
+      "name": "base.py",
+      "path": "models/base.py",
+      "location": {
+        "file": "models/base.py",
+        "start_line": 1,
+        "end_line": 4,
+        "start_column": 0,
+        "end_column": 0
+      },
+      "properties": {
+        "module_name": "models.base",
+        "extension": ".py",
+        "size_bytes": 99,
+        "line_count": 4
+      },
+      "is_synthetic": false,
+      "resolved": true
+    },
+    {
+      "id": "file:models/user.py",
+      "type": "File",
+      "name": "user.py",
+      "path": "models/user.py",
+      "location": {
+        "file": "models/user.py",
+        "start_line": 1,
+        "end_line": 12,
+        "start_column": 0,
+        "end_column": 0
+      },
+      "properties": {
+        "module_name": "models.user",
+        "extension": ".py",
+        "size_bytes": 261,
+        "line_count": 12
+      },
+      "is_synthetic": false,
+      "resolved": true
+    },
+    {
+      "id": "file:services/__init__.py",
+      "type": "File",
+      "name": "__init__.py",
+      "path": "services/__init__.py",
+      "location": {
+        "file": "services/__init__.py",
+        "start_line": 1,
+        "end_line": 1,
+        "start_column": 0,
+        "end_column": 0
+      },
+      "properties": {
+        "module_name": "services",
+        "extension": ".py",
+        "size_bytes": 24,
+        "line_count": 1
+      },
+      "is_synthetic": false,
+      "resolved": true
+    },
+    {
+      "id": "file:services/user_service.py",
+      "type": "File",
+      "name": "user_service.py",
+      "path": "services/user_service.py",
+      "location": {
+        "file": "services/user_service.py",
+        "start_line": 1,
+        "end_line": 19,
+        "start_column": 0,
+        "end_column": 0
+      },
+      "properties": {
+        "module_name": "services.user_service",
+        "extension": ".py",
+        "size_bytes": 453,
+        "line_count": 19
+      },
+      "is_synthetic": false,
+      "resolved": true
+    },
+    {
+      "id": "func:main.py:main",
+      "type": "Function",
+      "name": "main",
+      "path": "main.py",
+      "location": {
+        "file": "main.py",
+        "start_line": 4,
+        "end_line": 8,
+        "start_column": 0,
+        "end_column": 18
+      },
+      "properties": {
+        "qualified_name": "main",
+        "docstring": null,
+        "decorators": [],
+        "is_async": false,
+        "parameters": [],
+        "return_type": null
+      },
+      "is_synthetic": false,
+      "resolved": true
+    },
+    {
+      "id": "method:models/base.py:BaseModel.__init__",
+      "type": "Method",
+      "name": "__init__",
+      "path": "models/base.py",
+      "location": {
+        "file": "models/base.py",
+        "start_line": 3,
+        "end_line": 4,
+        "start_column": 4,
+        "end_column": 20
+      },
+      "properties": {
+        "qualified_name": "BaseModel.__init__",
+        "docstring": null,
+        "decorators": [],
+        "is_async": false,
+        "parameters": [
+          "self",
+          "id"
+        ],
+        "return_type": null
+      },
+      "is_synthetic": false,
+      "resolved": true
+    },
+    {
+      "id": "method:models/user.py:User.__init__",
+      "type": "Method",
+      "name": "__init__",
+      "path": "models/user.py",
+      "location": {
+        "file": "models/user.py",
+        "start_line": 7,
+        "end_line": 9,
+        "start_column": 4,
+        "end_column": 24
+      },
+      "properties": {
+        "qualified_name": "User.__init__",
+        "docstring": null,
+        "decorators": [],
+        "is_async": false,
+        "parameters": [
+          "self",
+          "id",
+          "name"
+        ],
+        "return_type": null
+      },
+      "is_synthetic": false,
+      "resolved": true
+    },
+    {
+      "id": "method:models/user.py:User.get_display_name",
+      "type": "Method",
+      "name": "get_display_name",
+      "path": "models/user.py",
+      "location": {
+        "file": "models/user.py",
+        "start_line": 11,
+        "end_line": 12,
+        "start_column": 4,
+        "end_column": 35
+      },
+      "properties": {
+        "qualified_name": "User.get_display_name",
+        "docstring": null,
+        "decorators": [],
+        "is_async": false,
+        "parameters": [
+          "self"
+        ],
+        "return_type": "str"
+      },
+      "is_synthetic": false,
+      "resolved": true
+    },
+    {
+      "id": "method:services/user_service.py:UserService.__init__",
+      "type": "Method",
+      "name": "__init__",
+      "path": "services/user_service.py",
+      "location": {
+        "file": "services/user_service.py",
+        "start_line": 7,
+        "end_line": 8,
+        "start_column": 4,
+        "end_column": 23
+      },
+      "properties": {
+        "qualified_name": "UserService.__init__",
+        "docstring": null,
+        "decorators": [],
+        "is_async": false,
+        "parameters": [
+          "self"
+        ],
+        "return_type": null
+      },
+      "is_synthetic": false,
+      "resolved": true
+    },
+    {
+      "id": "method:services/user_service.py:UserService.create_user",
+      "type": "Method",
+      "name": "create_user",
+      "path": "services/user_service.py",
+      "location": {
+        "file": "services/user_service.py",
+        "start_line": 10,
+        "end_line": 13,
+        "start_column": 4,
+        "end_column": 19
+      },
+      "properties": {
+        "qualified_name": "UserService.create_user",
+        "docstring": null,
+        "decorators": [],
+        "is_async": false,
+        "parameters": [
+          "self",
+          "user_id",
+          "name"
+        ],
+        "return_type": "User"
+      },
+      "is_synthetic": false,
+      "resolved": true
+    },
+    {
+      "id": "method:services/user_service.py:UserService.get_user",
+      "type": "Method",
+      "name": "get_user",
+      "path": "services/user_service.py",
+      "location": {
+        "file": "services/user_service.py",
+        "start_line": 15,
+        "end_line": 19,
+        "start_column": 4,
+        "end_column": 19
+      },
+      "properties": {
+        "qualified_name": "UserService.get_user",
+        "docstring": null,
+        "decorators": [],
+        "is_async": false,
+        "parameters": [
+          "self",
+          "user_id"
+        ],
+        "return_type": "User"
+      },
+      "is_synthetic": false,
+      "resolved": true
+    },
+    {
+      "id": "repo:sample_repo",
+      "type": "Repository",
+      "name": "sample_repo",
+      "path": ".",
+      "location": null,
+      "properties": {
+        "language": "python",
+        "abs_path": "D:\\Project Genome\\sample_repo"
+      },
+      "is_synthetic": false,
+      "resolved": true
+    },
+    {
+      "id": "unresolved:print",
+      "type": "UnresolvedReference",
+      "name": "print",
+      "is_synthetic": true,
+      "resolved": false,
+      "raw_call": "print",
+      "properties": {
+        "raw_call": "print",
+        "resolved": false,
+        "confidence": "syntactic_only"
+      }
+    },
+    {
+      "id": "unresolved:self.users.get",
+      "type": "UnresolvedReference",
+      "name": "self.users.get",
+      "is_synthetic": true,
+      "resolved": false,
+      "raw_call": "self.users.get",
+      "properties": {
+        "raw_call": "self.users.get",
+        "resolved": false,
+        "confidence": "syntactic_only"
+      }
+    },
+    {
+      "id": "unresolved:service.create_user",
+      "type": "UnresolvedReference",
+      "name": "service.create_user",
+      "is_synthetic": true,
+      "resolved": false,
+      "raw_call": "service.create_user",
+      "properties": {
+        "raw_call": "service.create_user",
+        "resolved": false,
+        "confidence": "syntactic_only"
+      }
+    },
+    {
+      "id": "unresolved:service.get_user",
+      "type": "UnresolvedReference",
+      "name": "service.get_user",
+      "is_synthetic": true,
+      "resolved": false,
+      "raw_call": "service.get_user",
+      "properties": {
+        "raw_call": "service.get_user",
+        "resolved": false,
+        "confidence": "syntactic_only"
+      }
+    },
+    {
+      "id": "unresolved:super",
+      "type": "UnresolvedReference",
+      "name": "super",
+      "is_synthetic": true,
+      "resolved": false,
+      "raw_call": "super",
+      "properties": {
+        "raw_call": "super",
+        "resolved": false,
+        "confidence": "syntactic_only"
+      }
+    },
+    {
+      "id": "unresolved:super().__init__",
+      "type": "UnresolvedReference",
+      "name": "super().__init__",
+      "is_synthetic": true,
+      "resolved": false,
+      "raw_call": "super().__init__",
+      "properties": {
+        "raw_call": "super().__init__",
+        "resolved": false,
+        "confidence": "syntactic_only"
+      }
+    },
+    {
+      "id": "unresolved:user.get_display_name",
+      "type": "UnresolvedReference",
+      "name": "user.get_display_name",
+      "is_synthetic": true,
+      "resolved": false,
+      "raw_call": "user.get_display_name",
+      "properties": {
+        "raw_call": "user.get_display_name",
+        "resolved": false,
+        "confidence": "syntactic_only"
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "source": "class:models/base.py:BaseModel",
+      "target": "method:models/base.py:BaseModel.__init__",
+      "type": "CONTAINS",
+      "id": "rel:contains:class:models/base.py:BaseModel->method:models/base.py:BaseModel.__init__",
+      "location": null,
+      "properties": {
+        "confidence": "certain"
+      },
+      "is_derived": false,
+      "is_primitive": true,
+      "is_unresolved": false
+    },
+    {
+      "source": "class:models/user.py:User",
+      "target": "method:models/user.py:User.__init__",
+      "type": "CONTAINS",
+      "id": "rel:contains:class:models/user.py:User->method:models/user.py:User.__init__",
+      "location": null,
+      "properties": {
+        "confidence": "certain"
+      },
+      "is_derived": false,
+      "is_primitive": true,
+      "is_unresolved": false
+    },
+    {
+      "source": "class:models/user.py:User",
+      "target": "method:models/user.py:User.get_display_name",
+      "type": "CONTAINS",
+      "id": "rel:contains:class:models/user.py:User->method:models/user.py:User.get_display_name",
+      "location": null,
+      "properties": {
+        "confidence": "certain"
+      },
+      "is_derived": false,
+      "is_primitive": true,
+      "is_unresolved": false
+    },
+    {
+      "source": "class:models/user.py:User",
+      "target": "class:models/base.py:BaseModel",
+      "type": "INHERITS",
+      "id": "rel:inherits:class:models/user.py:User->class:models/base.py:BaseModel:4",
+      "location": {
+        "file": "models/user.py",
+        "start_line": 4,
+        "end_line": 4,
+        "start_column": 11,
+        "end_column": 11
+      },
+      "properties": {
+        "raw_base_name": "BaseModel",
+        "resolved": true
+      },
+      "is_derived": false,
+      "is_primitive": true,
+      "is_unresolved": false
+    },
+    {
+      "source": "class:services/user_service.py:UserService",
+      "target": "method:services/user_service.py:UserService.__init__",
+      "type": "CONTAINS",
+      "id": "rel:contains:class:services/user_service.py:UserService->method:services/user_service.py:UserService.__init__",
+      "location": null,
+      "properties": {
+        "confidence": "certain"
+      },
+      "is_derived": false,
+      "is_primitive": true,
+      "is_unresolved": false
+    },
+    {
+      "source": "class:services/user_service.py:UserService",
+      "target": "method:services/user_service.py:UserService.create_user",
+      "type": "CONTAINS",
+      "id": "rel:contains:class:services/user_service.py:UserService->method:services/user_service.py:UserService.create_user",
+      "location": null,
+      "properties": {
+        "confidence": "certain"
+      },
+      "is_derived": false,
+      "is_primitive": true,
+      "is_unresolved": false
+    },
+    {
+      "source": "class:services/user_service.py:UserService",
+      "target": "method:services/user_service.py:UserService.get_user",
+      "type": "CONTAINS",
+      "id": "rel:contains:class:services/user_service.py:UserService->method:services/user_service.py:UserService.get_user",
+      "location": null,
+      "properties": {
+        "confidence": "certain"
+      },
+      "is_derived": false,
+      "is_primitive": true,
+      "is_unresolved": false
+    },
+    {
+      "source": "dir:models",
+      "target": "file:models/__init__.py",
+      "type": "CONTAINS",
+      "id": "rel:contains:dir:models->file:models/__init__.py",
+      "location": null,
+      "properties": {
+        "confidence": "certain"
+      },
+      "is_derived": false,
+      "is_primitive": true,
+      "is_unresolved": false
+    },
+    {
+      "source": "dir:models",
+      "target": "file:models/base.py",
+      "type": "CONTAINS",
+      "id": "rel:contains:dir:models->file:models/base.py",
+      "location": null,
+      "properties": {
+        "confidence": "certain"
+      },
+      "is_derived": false,
+      "is_primitive": true,
+      "is_unresolved": false
+    },
+    {
+      "source": "dir:models",
+      "target": "file:models/user.py",
+      "type": "CONTAINS",
+      "id": "rel:contains:dir:models->file:models/user.py",
+      "location": null,
+      "properties": {
+        "confidence": "certain"
+      },
+      "is_derived": false,
+      "is_primitive": true,
+      "is_unresolved": false
+    },
+    {
+      "source": "dir:services",
+      "target": "file:services/__init__.py",
+      "type": "CONTAINS",
+      "id": "rel:contains:dir:services->file:services/__init__.py",
+      "location": null,
+      "properties": {
+        "confidence": "certain"
+      },
+      "is_derived": false,
+      "is_primitive": true,
+      "is_unresolved": false
+    },
+    {
+      "source": "dir:services",
+      "target": "file:services/user_service.py",
+      "type": "CONTAINS",
+      "id": "rel:contains:dir:services->file:services/user_service.py",
+      "location": null,
+      "properties": {
+        "confidence": "certain"
+      },
+      "is_derived": false,
+      "is_primitive": true,
+      "is_unresolved": false
+    },
+    {
+      "source": "file:main.py",
+      "target": "func:main.py:main",
+      "type": "CALLS",
+      "id": "rel:calls:file:main.py->func:main.py:main:12:4",
+      "location": {
+        "file": "main.py",
+        "start_line": 12,
+        "end_line": 12,
+        "start_column": 4,
+        "end_column": 4
+      },
+      "properties": {
+        "raw_call": "main",
+        "resolved": true,
+        "confidence": "symbol_table_match"
+      },
+      "is_derived": false,
+      "is_primitive": true,
+      "is_unresolved": false
+    },
+    {
+      "source": "file:main.py",
+      "target": "func:main.py:main",
+      "type": "CONTAINS",
+      "id": "rel:contains:file:main.py->func:main.py:main",
+      "location": null,
+      "properties": {
+        "confidence": "certain"
+      },
+      "is_derived": false,
+      "is_primitive": true,
+      "is_unresolved": false
+    },
+    {
+      "source": "file:main.py",
+      "target": "file:services/user_service.py",
+      "type": "DEPENDS_ON",
+      "id": "rel:depends_on:file:main.py->file:services/user_service.py",
+      "location": null,
+      "properties": {
+        "derived": true,
+        "reasons": [
+          "CALLS",
+          "IMPORTS"
+        ],
+        "weight": 2
+      },
+      "is_derived": true,
+      "is_primitive": false,
+      "is_unresolved": false
+    },
+    {
+      "source": "file:main.py",
+      "target": "file:services/user_service.py",
+      "type": "IMPORTS",
+      "id": "rel:imports:file:main.py->file:services/user_service.py:1",
+      "location": {
+        "file": "main.py",
+        "start_line": 1,
+        "end_line": 1,
+        "start_column": 0,
+        "end_column": 0
+      },
+      "properties": {
+        "imported_symbol": "UserService",
+        "alias": null,
+        "is_wildcard": false
+      },
+      "is_derived": false,
+      "is_primitive": true,
+      "is_unresolved": false
+    },
+    {
+      "source": "file:models/base.py",
+      "target": "class:models/base.py:BaseModel",
+      "type": "CONTAINS",
+      "id": "rel:contains:file:models/base.py->class:models/base.py:BaseModel",
+      "location": null,
+      "properties": {
+        "confidence": "certain"
+      },
+      "is_derived": false,
+      "is_primitive": true,
+      "is_unresolved": false
+    },
+    {
+      "source": "file:models/user.py",
+      "target": "class:models/user.py:User",
+      "type": "CONTAINS",
+      "id": "rel:contains:file:models/user.py->class:models/user.py:User",
+      "location": null,
+      "properties": {
+        "confidence": "certain"
+      },
+      "is_derived": false,
+      "is_primitive": true,
+      "is_unresolved": false
+    },
+    {
+      "source": "file:models/user.py",
+      "target": "file:models/base.py",
+      "type": "DEPENDS_ON",
+      "id": "rel:depends_on:file:models/user.py->file:models/base.py",
+      "location": null,
+      "properties": {
+        "derived": true,
+        "reasons": [
+          "IMPORTS",
+          "INHERITS"
+        ],
+        "weight": 2
+      },
+      "is_derived": true,
+      "is_primitive": false,
+      "is_unresolved": false
+    },
+    {
+      "source": "file:models/user.py",
+      "target": "file:models/base.py",
+      "type": "IMPORTS",
+      "id": "rel:imports:file:models/user.py->file:models/base.py:1",
+      "location": {
+        "file": "models/user.py",
+        "start_line": 1,
+        "end_line": 1,
+        "start_column": 0,
+        "end_column": 0
+      },
+      "properties": {
+        "imported_symbol": "BaseModel",
+        "alias": null,
+        "is_wildcard": false
+      },
+      "is_derived": false,
+      "is_primitive": true,
+      "is_unresolved": false
+    },
+    {
+      "source": "file:services/user_service.py",
+      "target": "class:services/user_service.py:UserService",
+      "type": "CONTAINS",
+      "id": "rel:contains:file:services/user_service.py->class:services/user_service.py:UserService",
+      "location": null,
+      "properties": {
+        "confidence": "certain"
+      },
+      "is_derived": false,
+      "is_primitive": true,
+      "is_unresolved": false
+    },
+    {
+      "source": "file:services/user_service.py",
+      "target": "file:models/user.py",
+      "type": "DEPENDS_ON",
+      "id": "rel:depends_on:file:services/user_service.py->file:models/user.py",
+      "location": null,
+      "properties": {
+        "derived": true,
+        "reasons": [
+          "CALLS",
+          "IMPORTS"
+        ],
+        "weight": 2
+      },
+      "is_derived": true,
+      "is_primitive": false,
+      "is_unresolved": false
+    },
+    {
+      "source": "file:services/user_service.py",
+      "target": "file:models/user.py",
+      "type": "IMPORTS",
+      "id": "rel:imports:file:services/user_service.py->file:models/user.py:1",
+      "location": {
+        "file": "services/user_service.py",
+        "start_line": 1,
+        "end_line": 1,
+        "start_column": 0,
+        "end_column": 0
+      },
+      "properties": {
+        "imported_symbol": "User",
+        "alias": null,
+        "is_wildcard": false
+      },
+      "is_derived": false,
+      "is_primitive": true,
+      "is_unresolved": false
+    },
+    {
+      "source": "func:main.py:main",
+      "target": "class:services/user_service.py:UserService",
+      "type": "CALLS",
+      "id": "rel:calls:func:main.py:main->class:services/user_service.py:UserService:5:14",
+      "location": {
+        "file": "main.py",
+        "start_line": 5,
+        "end_line": 5,
+        "start_column": 14,
+        "end_column": 14
+      },
+      "properties": {
+        "raw_call": "UserService",
+        "resolved": true,
+        "confidence": "symbol_table_match"
+      },
+      "is_derived": false,
+      "is_primitive": true,
+      "is_unresolved": false
+    },
+    {
+      "source": "func:main.py:main",
+      "target": "unresolved:print",
+      "type": "CALLS",
+      "id": "rel:calls:func:main.py:main->unresolved:print:8:4",
+      "location": {
+        "file": "main.py",
+        "start_line": 8,
+        "end_line": 8,
+        "start_column": 4,
+        "end_column": 4
+      },
+      "properties": {
+        "raw_call": "print",
+        "resolved": false,
+        "confidence": "syntactic_only"
+      },
+      "is_derived": false,
+      "is_primitive": true,
+      "is_unresolved": true
+    },
+    {
+      "source": "func:main.py:main",
+      "target": "unresolved:service.create_user",
+      "type": "CALLS",
+      "id": "rel:calls:func:main.py:main->unresolved:service.create_user:6:11",
+      "location": {
+        "file": "main.py",
+        "start_line": 6,
+        "end_line": 6,
+        "start_column": 11,
+        "end_column": 11
+      },
+      "properties": {
+        "raw_call": "service.create_user",
+        "resolved": false,
+        "confidence": "syntactic_only"
+      },
+      "is_derived": false,
+      "is_primitive": true,
+      "is_unresolved": true
+    },
+    {
+      "source": "func:main.py:main",
+      "target": "unresolved:service.get_user",
+      "type": "CALLS",
+      "id": "rel:calls:func:main.py:main->unresolved:service.get_user:7:14",
+      "location": {
+        "file": "main.py",
+        "start_line": 7,
+        "end_line": 7,
+        "start_column": 14,
+        "end_column": 14
+      },
+      "properties": {
+        "raw_call": "service.get_user",
+        "resolved": false,
+        "confidence": "syntactic_only"
+      },
+      "is_derived": false,
+      "is_primitive": true,
+      "is_unresolved": true
+    },
+    {
+      "source": "method:models/user.py:User.__init__",
+      "target": "unresolved:super().__init__",
+      "type": "CALLS",
+      "id": "rel:calls:method:models/user.py:User.__init__->unresolved:super().__init__:8:8",
+      "location": {
+        "file": "models/user.py",
+        "start_line": 8,
+        "end_line": 8,
+        "start_column": 8,
+        "end_column": 8
+      },
+      "properties": {
+        "raw_call": "super().__init__",
+        "resolved": false,
+        "confidence": "syntactic_only"
+      },
+      "is_derived": false,
+      "is_primitive": true,
+      "is_unresolved": true
+    },
+    {
+      "source": "method:models/user.py:User.__init__",
+      "target": "unresolved:super",
+      "type": "CALLS",
+      "id": "rel:calls:method:models/user.py:User.__init__->unresolved:super:8:8",
+      "location": {
+        "file": "models/user.py",
+        "start_line": 8,
+        "end_line": 8,
+        "start_column": 8,
+        "end_column": 8
+      },
+      "properties": {
+        "raw_call": "super",
+        "resolved": false,
+        "confidence": "syntactic_only"
+      },
+      "is_derived": false,
+      "is_primitive": true,
+      "is_unresolved": true
+    },
+    {
+      "source": "method:services/user_service.py:UserService.create_user",
+      "target": "class:models/user.py:User",
+      "type": "CALLS",
+      "id": "rel:calls:method:services/user_service.py:UserService.create_user->class:models/user.py:User:11:15",
+      "location": {
+        "file": "services/user_service.py",
+        "start_line": 11,
+        "end_line": 11,
+        "start_column": 15,
+        "end_column": 15
+      },
+      "properties": {
+        "raw_call": "User",
+        "resolved": true,
+        "confidence": "symbol_table_match"
+      },
+      "is_derived": false,
+      "is_primitive": true,
+      "is_unresolved": false
+    },
+    {
+      "source": "method:services/user_service.py:UserService.get_user",
+      "target": "unresolved:self.users.get",
+      "type": "CALLS",
+      "id": "rel:calls:method:services/user_service.py:UserService.get_user->unresolved:self.users.get:16:15",
+      "location": {
+        "file": "services/user_service.py",
+        "start_line": 16,
+        "end_line": 16,
+        "start_column": 15,
+        "end_column": 15
+      },
+      "properties": {
+        "raw_call": "self.users.get",
+        "resolved": false,
+        "confidence": "syntactic_only"
+      },
+      "is_derived": false,
+      "is_primitive": true,
+      "is_unresolved": true
+    },
+    {
+      "source": "method:services/user_service.py:UserService.get_user",
+      "target": "unresolved:user.get_display_name",
+      "type": "CALLS",
+      "id": "rel:calls:method:services/user_service.py:UserService.get_user->unresolved:user.get_display_name:18:12",
+      "location": {
+        "file": "services/user_service.py",
+        "start_line": 18,
+        "end_line": 18,
+        "start_column": 12,
+        "end_column": 12
+      },
+      "properties": {
+        "raw_call": "user.get_display_name",
+        "resolved": false,
+        "confidence": "syntactic_only"
+      },
+      "is_derived": false,
+      "is_primitive": true,
+      "is_unresolved": true
+    },
+    {
+      "source": "repo:sample_repo",
+      "target": "dir:models",
+      "type": "CONTAINS",
+      "id": "rel:contains:repo:sample_repo->dir:models",
+      "location": null,
+      "properties": {
+        "confidence": "certain"
+      },
+      "is_derived": false,
+      "is_primitive": true,
+      "is_unresolved": false
+    },
+    {
+      "source": "repo:sample_repo",
+      "target": "dir:services",
+      "type": "CONTAINS",
+      "id": "rel:contains:repo:sample_repo->dir:services",
+      "location": null,
+      "properties": {
+        "confidence": "certain"
+      },
+      "is_derived": false,
+      "is_primitive": true,
+      "is_unresolved": false
+    },
+    {
+      "source": "repo:sample_repo",
+      "target": "file:main.py",
+      "type": "CONTAINS",
+      "id": "rel:contains:repo:sample_repo->file:main.py",
+      "location": null,
+      "properties": {
+        "confidence": "certain"
+      },
+      "is_derived": false,
+      "is_primitive": true,
+      "is_unresolved": false
+    }
+  ]
+}
