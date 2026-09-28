@@ -1,4 +1,3 @@
-# Project-Genome
 # ProjectGenome — Complete Implementation & Research Roadmap
 
 **Project:** ProjectGenome  
