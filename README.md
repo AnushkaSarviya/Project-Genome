@@ -206,6 +206,37 @@ The main experiment should be completed before running optional model comparison
                     └─────────────────────┘
 ```
 
+## 6.1 Subsystems Overview & Implementation Status
+
+ProjectGenome is built as a modular software intelligence and graph retrieval pipeline:
+
+### 1. Repository Intelligence Subsystem (`projectgenome/`)
+- **Purpose:** Deterministic static analysis and AST structure extraction for code repositories.
+- **Components:**
+  - `scanner/repository_scanner.py`: Traverses directories, normalizes file paths, derives logical module names.
+  - `parsers/python_parser.py`: AST parsing, class, function, method, import, inheritance, and call expression extraction.
+  - `extractors/entity_extractor.py` & `relationship_extractor.py`: Constructs deterministic entity IDs (`type:path:name`), resolves calls statically, handles unresolved external calls, tracks line/column provenance.
+  - `exporters/json_exporter.py`: Emits canonical JSON sorted by ID with SHA-256 canonical integrity hash.
+- **CLI Usage:**
+  ```bash
+  python -m projectgenome.main --repo sample_repo --output sample_analysis.json
+  ```
+- **Tests:** `tests/test_models.py`, `tests/test_scanner.py`, `tests/test_parser_and_extractors.py` (11/11 passing).
+
+### 2. Knowledge Graph Subsystem (`src/knowledge_graph/`)
+- **Purpose:** NetworkX `MultiDiGraph` construction, graph schema validation, graph traversal, and neighborhood context extraction.
+- **Components:**
+  - `builder.py`: Ingests normalized JSON (`sample_analysis.json`) into NetworkX graph without Module nodes.
+  - `graph.py` & `schema.py`: Typed graph nodes, edges, properties, and constraint enforcement.
+  - `traversal.py` & `queries.py`: Multi-hop neighborhood expansion, callers/callees lookup, dependency path discovery.
+  - `serialization.py` & `visualization/`: JSON/GraphML export & NetworkX visualizer.
+- **Usage:**
+  ```python
+  from src.knowledge_graph.builder import build_from_analysis
+  kg = build_from_analysis("sample_analysis.json")
+  ```
+- **Tests:** `tests/knowledge_graph/test_*.py` (39/39 passing).
+
 ---
 
 # PHASE 0 — Freeze the Project Scope
