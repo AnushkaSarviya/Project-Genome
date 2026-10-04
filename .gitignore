@@ -2,3 +2,10 @@
 __pycache__/
 .pytest_cache/
 *.py[cod]
+
+# Frontend and Environment
+node_modules/
+dist/
+*.local
+.env
+.env.*
